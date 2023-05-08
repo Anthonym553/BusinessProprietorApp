@@ -5,14 +5,6 @@
 The One Man Army mobile application provides a platform for small business owners to display their expertise and advertise their services. Additionally, it enables individuals who lack certain skill sets to locate competent professionals and outsource work to them.
 ______________________________________________________________
 
-## Development Team
-* Michael Trofimov
-* Eliashazboun
-* Alejandro Cruz-Bautista
-* Anthony Miranda
-* Deidre240
-* ayarbray
-
 ## Recent Updates
 * Quick fix for passing the wrong ID through intent
 * Receipts now dynamically populate necessary fields, hotfix on ownderdash
@@ -29,13 +21,10 @@ Android Studio
 
 FireBase
 
-## Installation
-
-``` git clone https://gitlab.com/cs-department-ecu/csci-4230-spring-2023/section-001/onemanarmy/oneManArmy.git ```
 
 ## Project Setup
 
-To run this app, you have to open it in Android Studio, press the "Build" button, and then the "Run" button. This app was created using Android API 30, and the platform that is being emulated is Google Pixel 3, so we suggest using the same API and platform we did.
+This app was created using Android API 30, and the platform that is being emulated is Google Pixel 3, so it is suggested that the same API and platform is used.
 
 
 ## About the App:
@@ -60,11 +49,11 @@ OneManArmy is an app created for sole proprietors to manage their businesses and
 
 ## Implementation:
 
-Our app uses FireBase for back-end management. All user-related data, like e-mail, password, etc., is stored in FireBase and pulled to the front end by request.
+The app uses FireBase for back-end management. All user-related data is stored in FireBase and pulled to the front end by request.
 
 There are two separate dashboards for the business owner and client. The main difference is that the client's dashboard has a "Search" page instead of a "Receipt Creator."
 
-On the "Appointments" page, clients and business owners can make appointments with each other. The dates are demonstrated in the calendar, and we used the Material-Calendar library that lets us create appointments for specific days and times and track them. Days with the appointments on them are highlighted on the calendar.
+On the "Appointments" page, clients and business owners can make appointments with each other. The dates are demonstrated in the calendar, the Material-Calendar library was used which allowed creation of appointments for specific days and times and track them. Days with the appointments on them are highlighted on the calendar.
 
 On the "Account" page, the client can edit his basic information: name, e-mail, phone number, and address. From the business owner's side, the "Profile" page is similar, but it is possible to change the name of their business and add their skills.
 
@@ -75,24 +64,4 @@ On the "Search" page, the client can look for the service providers; from there,
 
 ## Issues:
 
-1) We were planning to use the OpenCV library for "Receipt Creator," so there would be no need to input all the receipt information manually. Initially, we planned to scan the printed receipts. Eventually, we decided to go with manual input because it was less complicated to work with and to scan the receipt, we had to import the whole OpenCV library, which complicated things even further.
-
-
-## Contributors:
-
-* Alejandro Cruz-Batista. GitHub: https://github.com/itsAlex58
-* Elias Hazboun. GitHub: 
-* Anthony Miranda. GitHub: https://github.com/anthonym553
-* Mihail Trofimov. GitHub: https://github.com/Tr0f1k
-* Deidre Whitehead. GitHub: https://github.com/DreW3325
-* Austin Yarbray. GitHub: https://github.com/ayarbray123
-
-## Contributing
-
-If you would like to contribute to the development of One Man Army, please follow these steps:
-
-1. Fork the repository from GitLab.
-2. Create a new branch for your changes.
-3. Make your changes and commit them to the new branch.
-4. Push the new branch to your forked repository.
-5. Create a pull request to merge your changes into the main branch of the main repository.
+1) Planned to use the OpenCV library for "Receipt Creator," so that there would be no need to input all the receipt information manually. Complications came up and the feature implementation was put on standby until further notice.
